@@ -6,7 +6,8 @@
 
 body {
     font-family: Roboto;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
 
 header .logo {
     font-size: 24px;
+    font-weight: 800;
 }
 
 .navigation nav a {
@@ -29,6 +31,11 @@ header .logo {
     padding: 16px 150px;
     display: flex;
     justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    padding: 50px 200px;
 }
 
 .hero h1{
@@ -46,38 +53,69 @@ header .logo {
     color: #F9FAF8;
 }
 
-.hero {
+.main {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+}
+
+.section-one {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 300px 100px 300px;
 }
 
 .section-one h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    margin: auto;
 }
 
 
 .container-one {
-    padding: 20px 200px;
     display: flex;
     gap: 16px;
 }
 
+.card img{
+    width: 250px;
+    height: 250px;
+}
+
 .quote {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     background-color: #E5E7EB;
     font-size: 36px;
-    font-family:"light italic";
+    font-style: italic;
+    font-weight: 300;
     color: #1F2937;
-    padding: 100px 200px;
+    padding: 100px 350px;
+}
+
+.quote p{
+    margin-left: auto;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .section-two {
     padding: 100px 150px;
+    flex: 1;
 }
 
 .box {
-    background-color: #3882F6;
     display: flex;
+    width: 1300px;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding: 50px 0;
+    color: #F9FAF8;
 }
 
 footer {
