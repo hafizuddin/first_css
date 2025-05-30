@@ -29,18 +29,20 @@ header .logo {
 }
 
 .navigation {
-    padding: 16px 150px;
+    margin: 16px 150px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    margin: 95px 0;
 }
 
 .container-hero {
@@ -68,13 +70,18 @@ header .logo {
     padding: 7px 45px;
     font-size: 20px;
 }
+
 .image-hero {
     width: 600px;
-}
-.image-hero img {
-    width: 600px;
     height: 300px;
+    background-color: #313d4e;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
 }
+
+/* .image-hero img {
+    
+} */
 
 .main {
     flex: 1;
@@ -101,14 +108,14 @@ header .logo {
     padding: 60px 0 0;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     flex-wrap: wrap;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .card p {
