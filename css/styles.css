@@ -25,17 +25,30 @@ header .logo {
     font-size: 18px;
     text-decoration: none;
     padding-left: 16px;
+    white-space: nowrap
 }
 
 .navigation {
     padding: 16px 150px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero {
     display: flex;
-    padding: 50px 200px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container-hero {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .hero h1{
@@ -51,6 +64,16 @@ header .logo {
 .hero button {
     background-color: #3882F6;
     color: #F9FAF8;
+    border-radius: 8px;
+    padding: 7px 45px;
+    font-size: 20px;
+}
+.image-hero {
+    width: 600px;
+}
+.image-hero img {
+    width: 600px;
+    height: 300px;
 }
 
 .main {
@@ -63,37 +86,64 @@ header .logo {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 30px 300px 100px 300px;
+    padding: 60px 0 120px 0;
 }
 
 .section-one h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin: auto;
+    align-self: center;
 }
 
 
 .container-one {
+    padding: 60px 0 0;
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card p {
+    width: 250px;
+    text-align: center;
 }
 
 .card img{
-    width: 250px;
-    height: 250px;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+    padding: 10px;
+    width: 245px;
 }
 
 .quote {
+    background-color: #E5E7EB;
+    padding: 100px 0;
     flex: 1;
     display: flex;
-    flex-direction: column;
-    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-quote {
+    margin: 0 50px;
+    width: 1100px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.quote .sentence {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
-    padding: 100px 350px;
 }
 
 .quote p{
@@ -104,18 +154,46 @@ header .logo {
 }
 
 .section-two {
-    padding: 100px 150px;
+    padding: 100px 0;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
-    display: flex;
     width: 1300px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
     background-color: #3882F6;
     padding: 50px 0;
     color: #F9FAF8;
+    border-radius: 15px;
+}
+
+.container-two {
+    margin: 0 50px;
+}
+
+.container-two h3 {
+    font-size: 26px;
+}
+
+.container-two p {
+    font-size: 20px;
+    color: #E5E7Eb;
+}
+
+.box button {
+    background-color: #3882F6;
+    border: 3px solid #F9FAF8;
+    color: #F9FAF8;
+    border-radius: 12px;
+    padding: 2px 45px;
+    font-size: 20px;
+
 }
 
 footer {
